@@ -3,7 +3,7 @@ import spacy
 from spacy import displacy
 
 # Load your pre-trained SpaCy model
-nlp = spacy.load(r"F:\ml-course\Resume Parser Streamlit app\Resume-Parser-spacy\output\model-best")
+nlp = spacy.load("output/model-best")
 
 def extract_info_from_resume(resume_text):
     doc = nlp(resume_text)
